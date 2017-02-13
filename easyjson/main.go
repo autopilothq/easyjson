@@ -8,12 +8,12 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/mailru/autopilothq/bootstrap"
+	"github.com/mailru/easyjson/bootstrap"
 	// Reference the gen package to be friendly to vendoring tools,
 	// as it is an indirect dependency.
 	// (The temporary bootstrapping code uses it.)
-	_ "github.com/mailru/autopilothq/gen"
-	"github.com/mailru/autopilothq/parser"
+	_ "github.com/mailru/easyjson/gen"
+	"github.com/mailru/easyjson/parser"
 )
 
 var buildTags = flag.String("build_tags", "", "build tags to add to generated file")

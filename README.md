@@ -6,7 +6,7 @@ One of the aims of the library is to keep generated code simple enough so that i
 
 ## usage
 ```
-go get github.com/mailru/autopilothq/...
+go get github.com/mailru/easyjson/...
 easyjson -all <file>.go
 ```
 

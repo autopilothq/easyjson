@@ -7,7 +7,7 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/mailru/autopilothq"
+	"github.com/mailru/easyjson"
 )
 
 // Target this byte size for initial slice allocation to reduce garbage collection.
