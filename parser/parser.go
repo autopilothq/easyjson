@@ -89,3 +89,12 @@ func (p *Parser) Parse(fname string, isDir bool) error {
 	}
 	return nil
 }
+
+// fixes vendored paths
+func fixPkgPathVendoring(pkgPath string) string {
+	const vendor = "/vendor/"
+	if i := strings.LastIndex(pkgPath, vendor); i != -1 {
+		return pkgPath[i+len(vendor):]
+	}
+	return pkgPath
+}
