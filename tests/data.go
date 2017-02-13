@@ -5,8 +5,8 @@ import (
 	"math"
 	"time"
 
-	"github.com/mailru/easyjson"
-	"github.com/mailru/easyjson/opt"
+	"github.com/mailru/autopilothq"
+	"github.com/mailru/autopilothq/opt"
 )
 
 type PrimitiveTypes struct {
